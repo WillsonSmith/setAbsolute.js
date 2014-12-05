@@ -31,7 +31,6 @@ function setAbsolute(el) {
       element.style[key] = rect[key].toString() + "px";
 
     }
-
     //support problems with this
     /*
     Object.keys(rect).forEach(function(key) {
