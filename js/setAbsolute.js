@@ -25,14 +25,25 @@ function setAbsolute(el) {
     var element = el.element,
            rect = el.rect;
 
-    element.style.position = "absolute";
-    element.style.margin = "0";
 
+    for (var key in rect) {
+
+      element.style[key] = rect[key].toString() + "px";
+
+    }
+
+    //support problems with this
+    /*
     Object.keys(rect).forEach(function(key) {
 
       element.style[key] = rect[key].toString() + "px";
 
     });
+    */
+
+    element.style.position = "absolute";
+    element.style.margin = "0";
+
 
   }
 
