@@ -1,7 +1,8 @@
 steps.
-1. include on page
-2. call the function with an element or nodelist passed in: `setAbsolute(document.querySelectorAll('.item'))`
-3. all elements are now set absolute and should be in their same position
+
+  1. include on page
+  2. call the function with an element or nodelist passed in: `setAbsolute(document.querySelectorAll('.item'))`
+  3. all elements are now set absolute and should be in their same position
 
 Note that this removes margins - this is because the position would be offset by the margins if they were left on and the element was made absolutely positioned.
 
