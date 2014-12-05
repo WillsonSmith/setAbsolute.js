@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8">
+    
+    <style>
+
+      .group:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .item {
+
+        float: left;
+
+        width: 20%;
+        height: 100px;
+        background: #2ecc71;
+
+        margin: 10px 0 10px 0;
+
+      }
+
+      .container * + *:not(:nth-of-type(4n+1)) {
+
+        margin-left: 5%;
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+  <section id="container" class="container group">
+
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+
+  </section>
+
+  <script tyle="text/javascript" src="js/setAbsolute.js"></script>
+  <script>
+
+  setAbsolute(document.querySelectorAll(".item"));
+
+  </script>
+
+  </body>
+</html>
